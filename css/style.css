@@ -1,117 +1,133 @@
 
 *{
-    margin:0;
-    padding: 0;
-    border:0;
-    box-sizing: border-box;
-  }
+  margin:0;
+  padding: 0;
+  border:0;
+  box-sizing: border-box;
+}
 body{
-    background-image:url(../img/fondo_azul.png) ;
+  background-image:url(../img/fondo_azul.png) ;
+  font-family: 'Medula One', cursive;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-  -webkit-appearance:none;
-  background-image:url(../img/fondo_azul.png) ;
-  width: 0;
- 
+-webkit-appearance:none;
+background-image:url(../img/fondo_azul.png) ;
+width: 0;
+
 }
-/*body::-webkit-scrollbar-thumb {
-  background-image:url(../img/fondo_blanco.png) ;
-  border: 1px solid #f1f2f3;
-}*/
 .desaparece{
-  display: none;
+display: none;
 }
 
 /*HEADER*/
 header{
-  display: flex;
-  flex-direction: column;
-  height: 25vh;
+display: flex;
+flex-direction: column;
+height: 20vh;
+margin-bottom:2%;
+align-content: center;
 }
 /*Parte encabezado*/
 .encabezado{
-  display: flex;
-  justify-content: center;
-  background-image:url(../img/fondo_blanco.png),url(../img/marquito.png)  ;
-  height: 50%;
-  padding: 1%;
+display: flex;
+justify-content: center;
+background-image:url(../img/fondo_blanco.png),url(../img/marquito.png)  ;
+height: 70%;
+padding: 1%;
+border:5px solid rgba(0, 0, 0, 0);
+border-image:url(../img/fondo-azulito_plano.jpg) 30 stretch;
 }
 .logos{
-  width: 50%;
+width: 60%;
 }
 .logoP{
-  width: auto;
-  height: 100%;
+width: auto;
+height: 100%;
+}
+input{
+  background-color: rgba(255, 255, 255, 0.144);
+  height: 4vh;
+  border-bottom:black solid 2px;
 }
 /*Parte navegador*/
-.navegador{
-  display: flex;
-  flex-direction: column;
+nav {
   background-image:url(../img/fondo-azulito_plano.jpg);
-  font-family: 'Medula One', cursive;
+  padding: 5px 20px;
   position: relative;
 }
-nav{
-  display: flex;
-  flex-direction: column;
-  font-size: 200%;
-
+ul {
+  list-style-type: none;
 }
-nav li{
-  display: flex;
-  list-style: none;
-  padding: 1%;
-}
-nav a{
+a {
+  color: white;
   text-decoration: none;
-  color: white;
 }
-/*Animacion nav*/
-nav a{
-  position: relative;
+.menu li {
+  padding: 1% 5px;
 }
-nav a::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  margin-top: 1px;
-  background: linear-gradient(to right, gray, white, gray);
-  z-index:1;
-  transform: scaleX(0);
-  transform-origin: bottom center;
-  transition: transform 0.3s ease-in-out;
-  
+.toggle a {
+  font-size: 150%;
 }
-nav a:hover::before{
-  transform:scaleX(1);
-}
-/*Nav responsivo*/
-.hide {
-  display: block;
-  padding: 16px;
-  color: white;
-  cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px white;
-  font-size: 200%;
-}
-.hide:hover{
-  transition: all ease-in-out 250ms;
+/*Nav con responsividad desplegable*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .rupi_op{
   height: 5vh;
   margin-right: 5px;
-}
+  }
 
+.item {
+  width: 100%;
+  font-size: 150%;
+  order: 1;
+  display: none;
+}
+.item.active {
+  display: block;
+
+}
+.menu .buscador{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu .buscador img{
+  background-image: url(../img/fondo_blanco.png);
+  border-radius: 50px;
+  margin-right: 3%;
+  padding: 2%;
+}
+/*Animacion nav*/
+nav .item a{
+position: relative;
+}
+nav .item a::before{
+content: '';
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 2px;
+margin-top: 1px;
+background: linear-gradient(to right, gray, white, gray);
+z-index:1;
+transform: scaleX(0);
+transform-origin: bottom center;
+transition: transform 0.3s ease-in-out;
+}
+nav .item a:hover::before{
+transform:scaleX(1);
+}
 /*MAIN*/
 main h1{
   color: white;
   font-size: 300%;
   text-align: center;
   font-family: 'Medula One', cursive;
- /* -webkit-text-stroke: 1px rgb(46, 34, 34); */
 }
 /*Inicio tableta sheika*/
 .contenido{
@@ -161,6 +177,7 @@ main h1{
   font-size: 200%;
   margin: 3%;
 }
+
 .tablet-cont button{
   border-radius: 50%;
   height: 100px;
@@ -215,18 +232,25 @@ main h1{
   box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
 }
 /*Divisiones entre secciones*/
-.letra{
-  display: none;
-  width: 45%;
-  height: auto;
-}
 #division{
   display: flex;
   justify-content: center;
   width: 100%;
-  background:rgba(57, 57, 219, 0.247);
   margin: 1% 0 1% 0;
+  background: none;
+  height: auto;
+  flex-direction: column;
 }
+
+
+#division .separo{
+  background-image:url(../img/hyrule_rule.png) ;
+  margin-top: 1%;
+  height:6vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*Parte Significado*/
 .significado{
   display: flex;
@@ -256,8 +280,9 @@ justify-content: center;
 align-items: center;
 text-align: justify;
 padding:1%;
-font-size: 135%;
-background-color: rgba(0, 0, 255, 0.61);
+font-family: 'Libre Baskerville', serif;
+font-size: 130%;
+background-color: rgba(0, 0, 0, 0.61);
 color: white;
 }
 /*Noticias*/
@@ -267,7 +292,6 @@ color: white;
   width: 100%;
   height: 1200px;
   justify-content: center;
-  margin-bottom:5%;
 }
 .secciones #sect{
   display: flex;
@@ -307,6 +331,7 @@ article{
   background-size:cover;
   background-size: 100% 100%;
 }
+
 article div{
   display: flex;
   align-items: center;
@@ -319,12 +344,10 @@ article div{
 }
 .informacion h2{
   text-align: center;
-  font-family: 'Medula One', cursive;
   font-size: 200%;
 }
 .informacion h3{
   text-align: center;
-  font-family: 'Medula One', cursive;
   font-size: 190%;
 }
 .informacion p{
@@ -351,7 +374,7 @@ article div{
   display: none;
   position:absolute;
   width: 80%;
-  height: 40%;
+  height: 35%;
   background:#190b0cd0;
   overflow-y: scroll; 
   overflow-x: hidden; 
@@ -365,9 +388,6 @@ article div{
   border: 0.05px solid #f1f2f3;
   border-radius: 50px;
 }
-article:hover .informacion{
-  display: block;
-}
 
 /*FOOTER*/
 footer{
@@ -375,35 +395,45 @@ footer{
   background-image:url(../img/fondo-azulito_plano.jpg) ;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: white;
-}
-.poli{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  margin-top:6%;
   height: auto;
 }
-.poli a{
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.534);
-  padding: 0 1% 0 1%;
-  margin:1%;
-}
-.poli a:nth-of-type(2){
-  border-left:solid white 2px;
-  border-right:solid white 2px;
+
+#priv{
+  width: 20%;
+  height: auto;
 }
 
+footer div{
+display: flex;
+  margin:1% 0 1% 0;
+  justify-content: space-around;
+}
 
+footer .follow{
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3{
+  font-size: 150%;
+}
+
+footer p{
+  font-size: 150%;
+  color: rgba(255, 255, 255, 0.404);
+}
 @media (min-width: 768px) {/*tablet*/
-  /*desaparece*/
+   /*desaparece*/
 .desaparece{
   display: flex;
 }
-.hide{
+.hide,.rupi_op {
   display: none;
 }
-.rupi_op{
+.menu .buscador{
   display: none;
 }
   /*HEADER*/
@@ -414,17 +444,7 @@ header{
 .encabezado{
   justify-content: space-between;
 }
-.navegador{
-    background: none;
-}
-nav{
-  flex-direction: row;
-}
-.rupi{
-  width: 4%;
-  height: auto;
-  margin: 1%;
-}
+
 .logos{
   display: flex;
   margin-bottom: 3px;
@@ -434,36 +454,58 @@ nav{
   height: 100%;
 }
 /*Buscador*/
-.buscador{
+.encabezado .buscador{
   display: flex;
   align-items: center;
   justify-content: right;
   width: 50%;
   padding-right: 1%;
 }
-input{
-  background-color: rgba(255, 255, 255, 0.144);
-  height: 4vh;
-  border-bottom:black solid 2px;
-}
+
 .buscador img{
   margin: 2%;
   height: 40%;
 }
+
 /*Navegador*/
-.navegador{
-  justify-content: center;
-  align-items: center;
+.rupi:first-of-type{
+  order:0;
 }
+
+.rupi:last-of-type{
+  order:2;
+}
+
+.rupi{
+  width: 4%;
+  height: auto;
+  margin: 1%;
+  
+}
+
+.item {
+  display: block;
+  width: auto;
+  font-size: 200%;
+  list-style: none;
+  order: 1;
+}
+
 nav{
-  justify-content: space-evenly;
-  align-items: center;
+  display: flex;
+  background:none;
+  justify-content: center;
+  padding: 0%;
+}
+.menu {
+  justify-content: center;
   margin: 0 3%  0 3%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px white;
+  border-radius: 0 0 15px 15px;
+  justify-content: space-evenly;
   width: 65%;
   background-image:url(../img/fondo-azulito_plano.jpg);
 }
+
   /*MAIN*/
   /*Tableta Sheika*/
 .tablet-cont{
@@ -478,8 +520,7 @@ nav{
   justify-content: center;
 }
 .sig-texto{
-  font-size: 250%;
-  background-color: rgba(0, 0, 255, 0.479);
+  font-size: 230%;
   height: 80%;
 }
 /*Noticias*/
@@ -490,16 +531,22 @@ article{
   height: 100%;
 }
 .informacion{
-  height: 40%;
-  width: 40%;
+  height: 50%;
+  width: 45%;
 }
 .s-info img{
   width: 100%;
   height: 100%;
 }
-}
+/*Footer*/
 
-  
+footer{
+  margin-top:1%;
+}
+footer h3{
+  font-size: 200%;
+}
+}
 @media (min-width: 1200px) {/*Escritorio*/
   /*HEADER*/
 header{
@@ -525,7 +572,7 @@ header{
 }
 .sig-texto{
   padding:1%;
-  font-size: 200%;
+  font-size: 170%;
   background-color: rgba(0, 0, 255, 0.192);
   font-weight: normal;
   height: auto;
@@ -543,4 +590,31 @@ article{
   width: 28.5%;
   height: 60%;
 }
+/*Footer*/
+#priv{
+  width: 20%;
+  height: auto;
+}
+
+footer .follow{
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3{
+  font-size: 200%;
+}
+
+footer p{
+  font-size: 130%;
+}
+.redes{
+  margin: 1px;
+}
+.redes:hover{
+  transition:all .5s ease-in-out;
+  filter: opacity(.4);
+}
+
+
 }
