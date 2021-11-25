@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLOZ</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--Librerias-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <!--Letras-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+<header>
+  <div class="encabezado">
+    <div class="logos">
+      <img class="logoG desaparece" src="img/triforce.gif">
+      <img class="logoP" src="img/logo-loz.png">
+    </div>
+    <div class="buscador desaparece">
+      <img src="img/loupe.png">
+      <div id="bar-search"><input type="text" id="search" placeholder="Buscar"></div>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="#">Inicio</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="#">Cronología</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="#">Arte Oficial</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="#">Quienes somos</a></li>
+      <div class="buscador hide"><img src="img/loupe.png"><div id="bar-search "><input type="text" id="search" placeholder="Buscar"></div></div>
+      <li class="toggle hide"><a href="#"><i class="fas fa-bars"></i></a></li>
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="contenido">
+    <div class="tableta">
+      <div class="tablet-cont">
+        <div class="juego">
+          <h2>Juegos</h2>
+          <button onclick="window.location.href='juegos.html'"><img src="img/gamepad.png"></button>
+        </div>
+        <div class="person">
+          <h2>Personajes</h2>
+          <button> <img src="img/profile.png"></button>
+        </div>
+        <div class="lugares">
+          <h2>Lugares</h2>
+          <button> <img src="img/image.png"></button>
+        </div>
+        <div class="obj">
+          <h2>Objetos</h2>
+          <button> <img src="img/shelves.png"></button>
+        </div>
+        <div class="razas">
+          <h2>Razas</h2>
+          <button onclick="window.location.href='razas.html'"> <img src="img/stakeholder.png"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="division">
+    <div class="separo"></div>
+    <h1 data-aos="zoom-out" data-aos-delay="200">¿Qué es?</h1>
+    <div class="separo"></div>
+  </div>
+
+  <div class="significado " data-aos="fade-up">
+    <div class="caja sig-titulo" data-aos="zoom-in-down"  data-aos-delay="300" data-aos-offset="300">
+      <h2>The leyend of zelda</h2>
+    </div>
+    <div class="caja sig-texto" data-aos="fade-up" data-aos-delay="300" data-aos-offset="350"><p>Es una serie de videojuegos de acción-aventura 
+      creada por los diseñadores japoneses Shigeru Miyamoto y Takashi Tezuka, y desarrollada por Nintendo, 
+      empresa que también se encarga de su distribución internacional. Su trama por lo general describe las 
+      heroicas aventuras del joven guerrero Link, que debe enfrentarse a peligros y resolver acertijos para 
+      ayudar a la Princesa Zelda a derrotar a Ganondorf y salvar su hogar, el reino de Hyrule.</p>
+    </div>
+  </div>
+
+  <div id="division">
+    <div class="separo"></div>
+    <h1 data-aos="zoom-out" data-aos-delay="200">Novedades</h1>
+    <div class="separo"></div>
+  </div>
+
+  <div class="secciones" >
+    <section id="sect" data-aos="fade-up" data-aos-delay="500" >
+      <div class="articulos">
+        <article  onclick="mostrar()">
+          <div class="p-info">
+            <div class="informacion" >
+              <h2>Zelda: Skyward Sword HD ya igualó sus ventas con el juego original del Wii.</h2>
+              <p>Una de las sorpresas que The Legend of Zelda recibió este año fue la esperada versión de  
+              The Legend of Zelda: Skyward Sword HD, juego que llegó al Switch en julio pasado. Ya van algunos 
+              meses desde entonces y se acaba de confirmar que el renovado título igualó las ventas totales del 
+              original lanzado en 2011 para Wii.</p>    
+              <h3>THE LEGEND OF ZELDA: SKYWARD SWORD HD CUMPLE EN VENTAS</h3>
+              <p>Como te hemos comentado en diferentes notas recientes, Nintendo se reunió con sus inversores hace poco y habló de algunos temas importantes, incluidas las ventas totales de sus juegos más relevantes como parte de su reporte de resultados financieros.
+              Uno de ellos es The Legend of Zelda: Skyward Sword HD, que en unos cuantos meses ha igualado (y tal vez superado al momento de esta redacción) las ventas que logró la versión original en todo su tiempo.
+              Como pudiste observar, la versión para Nintendo Switch del juego ya logró vender más de 3.60 millones de unidades (hasta finales de septiembre de 2021), mientras que el juego original de Wii logró aproximadamente 3.67 millones, según el analista Daniel Ahmad.
+              </p>
+            </div>
+            <img class="logo-w" src="img/sky.jpg"/>
+          </div>
+        </article>
+
+        <article>
+          <div class="s-info">
+            <div class="informacion" >
+              <h2>Oferta: Zelda: Skyward Sword para Switch alcanza su precio más bajo en Amazon México</h2>
+              <p>Se dice mucho que los juegos de Nintendo nunca bajan de precio. Sin embargo, en ocasiones hay milagros que nos 
+              permiten obtenerlos sin pagar precio completo. Justo eso acaba de suceder hoy, puesto que Zelda: Skyward Sword para Nintendo Switch acaba de alcanzar su precio más bajo histórico.
+              Por si te lo perdiste: Demon’s Souls alcanza su precio más bajo histórico en Amazon México; tiene 44% de descuento
+              Lo que pasa es que Amazon México puso The Legend of Zelda: Skyward Sword HD con 36% de descuento. Esto quiere decir que 
+              tiene $499.01 MXN de descuento y que puede ser tuyo a cambio de $899.99 MXN.</p>
+            </div>
+            <img class="logo-w" src="img/zelda-skyword-caratula.png"/>
+            </div>
+        </article>
+      </div>
+      <div class=fechas>
+        <p>5/11/21</p>
+        <p>4/11/21</p>
+      </div>
+    </section>
+
+    <section id="sect" data-aos="fade-up" data-aos-delay="500" >
+      <div class="articulos">
+        <article>
+          <div class="t-info">
+            <div class="informacion" >
+              <h2>¡Ya está disponible la ola 2 de contenido descargable! Expande tu heroica aventura en Hyrule Warriors: Age of Calamity.</h2>
+              <p>En el juego Hyrule Warriors: Age of Calamity podrás ver el Hyrule de 100 años antes de los eventos del juego 
+              The Legend of Zelda™: Breath of the Wild (desde una perspectiva enfocada un poco más en la acción, como enfrentar a cientos de 
+              enemigos con objetos muy puntiagudos, por ejemplo). ¡Juega como Link, Zelda, los cuatro campeones y muchos héroes más mientras 
+              intentas salvar a Hyrule!
+              Una vez que finalices con esa fructífera aventura, podrás adquirir el contenido descargable para disfrutar de la nueva Ola 2: El guardián de los recuerdos. Recibirás acceso a ambas olas al adquirir la 
+              suscripción de expansión de Hyrule Warriors: Age of Calamity*.
+              Aquí tienes un poco más de información acerca de ambas olas de contenido descargable:</p> 
+              <h3>Ola 2: El guardián de los recuerdos (¡disponible hoy!)</h3>
+              <p>Con esta segunda ola, disfruta de un nuevo dúo de personajes jugables, escenarios adicionales y nuevas escenas de la historia. Defiende a Hyrule como uno de los peculiares personajes del dúo Prunia y Rotver, y su amplia gama de tecnología ancestral. Descubre cómo ciertos lugares, como el coliseo y la aldea Kakariko, lucían 100 años atrás en escenarios completamente nuevos. Y conoce a fondo a los campeones y al misterioso guardián en emotivas escenas de la historia mientras luchan por el futuro de Hyrule.
+              </p>
+              <h3>Ola 1: El latido ancestral</h3>
+              <p>Esta primera ola incluye un elenco de personajes ampliado, nuevos tipos de armas y desafiantes enemigos. Domina el campo de batalla como el jugable guardián de batalla, o pon a prueba las garras entrelazadas de Link y la Moto Hyliana para Zelda. Estos nuevos estilos de combate serán útiles en el nuevo modo de dificultad, Apocalipsis, y contra los enemigos agregados como un moblin que lanza bombas y un chuchu gigante. ¡Visita el Laboratorio Real de Tecnología Ancestral y pon a prueba los nuevos desafíos!
+              </p>
+            </div>
+            <img class="logo-w" src="img/logo-warriors.png"/>
+          </div>
+        </article>
+
+        <article>
+          <div class="c-info">
+            <div class="informacion" >
+              <h2>Zelda: Breath Of The Wild y Splatoon 2 tendrán lanzamientos físicos con DLC</h2>
+              <p>El Switch ha ofrecido desde su lanzamiento juegos populares que hasta la fecha siguen disfrutando todos los fans, 
+              esto gracias a los DLC que Nintendo se mantiene publicando para sacarles todo el jugo. Debido a ello, se acaba de confirmar 
+              que The Legend of Zelda: Breath of the Wild y Splatoon 2 tendrán nuevos lanzamientos físicos en Japón con ediciones que incluirán 
+              todo su contenido descargable.
+              Según la información compartida, los fans de estos 2 juegos en Japón podrán conseguir nuevas ediciones físicas con todo el material lanzado en cada título hasta ahora.
+              Nintendo confirmó que dichas ediciones estarán disponibles a partir del 8 de octubre, y mostró una imagen de cómo se verá la portada de cada juego.
+              Cabe mencionar que estos títulos completos solamente llegarán a Japón y parece que no está planeado contar con ellos en occidente.
+              Así que si deseas conseguir el contenido adicional de cada juego, deberás adquirir el Pase de Expansión para el juego de The Legend of Zelda, y la Octo Expansion para Splatoon 2 por separado.
+              </p>
+            </div>
+            <img class="logo-w" src="img/todoJunto.jpg"/>
+          </div>
+        </article>
+      </div>
+      <div class=fechas>
+        <p>29/10/21</p>
+        <p>24/09/21</p>
+      </div>
+    </section>
+    </div>
+</main>
+
+
+<footer>
+  <div>
+  <div class="follow">
+    <h3>Sigue a Nintendo:</h3>
+    <ul>
+    <a class="redes" href="https://www.facebook.com/NintendoLatAm/?brand_redir=119240841493711"><img src="img/facebook.png"></a>
+    <a class="redes" href="https://twitter.com/NintendoAmerica"><img src="img/gorjeo.png"></a>
+    <a class="redes" href="https://www.youtube.com/nintendo"><img src="img/youtube.png"></a>
+    <a class="redes" href="https://www.instagram.com/nintendo/"><img src="img/instagram.png"></a>
+  </ul>
+  </div>
+    <img id="priv" src="img/privacidad.png">
+  </div>
+    <p>©2021 Nintendo. The Legend of Zelda son marcas registradas de Nintendo.</p>
+</footer>
+
+
+<!--Scripts-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script/app.js"></script>
+
+
+</body>
+
+</html>
