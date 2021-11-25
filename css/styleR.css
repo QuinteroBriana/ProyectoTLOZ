@@ -1,0 +1,586 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+  }
+body{
+    background-image:url(../img/fondo_azul.png) ;
+}
+body::-webkit-scrollbar {
+  /*-webkit-appearance:none;
+  background-image:url(../img/fondo_azul.png) ;
+  width: 0;*/
+  display: none;
+ 
+}
+/*body::-webkit-scrollbar-thumb {
+  background-image:url(../img/fondo_blanco.png) ;
+  border: 1px solid #f1f2f3;
+}*/
+.desaparece{
+  display: none;
+}
+
+/*HEADER*/
+header{
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+}
+/*Parte encabezado*/
+.encabezado{
+  display: flex;
+  justify-content: center;
+  background-image:url(../img/fondo_blanco.png),url(../img/marquito.png)  ;
+  height: 50%;
+  padding: 1%;
+}
+.logos{
+  width: 50%;
+}
+.logoP{
+  width: auto;
+  height: 100%;
+}
+/*Parte navegador*/
+.navegador{
+  display: flex;
+  flex-direction: column;
+  background-image:url(../img/fondo-azulito_plano.jpg);
+  font-family: 'Medula One', cursive;
+  position: relative;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+
+}
+nav li{
+  display: flex;
+  list-style: none;
+  padding: 1%;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+/*Animacion nav*/
+nav a{
+  position: relative;
+}
+nav a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: 1px;
+  background: linear-gradient(to right, gray, white, gray);
+  z-index:1;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+  
+}
+nav a:hover::before{
+  transform:scaleX(1);
+}
+/*Nav responsivo*/
+.hide {
+  display: block;
+  padding: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 200%;
+}
+.hide:hover{
+  transition: all ease-in-out 250ms;
+}
+.rupi_op{
+  height: 5vh;
+  margin-right: 5px;
+}
+
+/*MAIN*/
+main h1{
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  font-family: 'Medula One', cursive;
+ /* -webkit-text-stroke: 1px rgb(46, 34, 34); */
+}
+/*Inicio tableta sheika*/
+.contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Medula One', cursive;
+  width: 100%;
+  height: auto;
+}
+.tableta{
+  background-image:url(../img/marco.png),
+  url(../img/fondo_azul_negro.jpg) ;
+  width: 100%;
+  height: auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5%;
+  margin-top: 1%;
+  padding: 3%;
+  color: white;
+  }
+.tablet-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 10%;
+}
+.tablet-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.tablet-cont div:last-child{
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+}
+.tablet-cont div{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.tablet-cont h2{
+  font-size: 200%;
+  margin: 3%;
+}
+.tablet-cont button{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border:black solid 3px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background: none;
+}
+.tablet-cont div{
+  text-align: center;
+}
+/*Botones tableta*/
+.juego button{
+  border-color: pink;
+  box-shadow: 0 0 40px 40px rgba(236, 159, 172, 0.719) inset, 0 0 0 0 rgba(236, 159, 172, 0.719);
+}
+.person button{
+  border-color:rgb(0, 132, 255);
+  box-shadow: 0 0 40px 40px rgba(152, 191, 241, 0.527) inset, 0 0 0 0 rgba(152, 191, 241, 0.527);
+}
+.lugares button{
+  border-color:purple;
+  box-shadow: 0 0 40px 40px rgba(128, 0, 128, 0.685) inset, 0 0 0 0 rgba(128, 0, 128, 0.685);
+}
+.obj button{
+  border-color:green;
+  box-shadow: 0 0 40px 40px rgba(0, 128, 0, 0.63) inset, 0 0 0 0 rgba(0, 128, 0, 0.63);
+}
+.razas button{
+  border-color:yellow;
+  box-shadow: 0 0 40px 40px rgba(255, 255, 0, 0.671) inset, 0 0 0 0 rgba(255, 255, 0, 0.671);
+}
+/*Animacion botones*/
+.tablet-cont button:hover{
+  cursor: pointer;
+  background: none;
+}
+.juego button:hover {
+  box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px pink;
+}
+.person button:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 132, 255) inset, 0 0 10px 4px rgb(0, 132, 255);
+}
+.lugares button:hover {
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+.obj button:hover{
+  box-shadow: 0 0 10px 0 green inset, 0 0 10px 4px green;
+}
+.razas button:hover{
+  box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+}
+/*Divisiones entre secciones*/
+.letra{
+  display: none;
+  width: 45%;
+  height: auto;
+}
+#division{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background:rgba(57, 57, 219, 0.247);
+  margin: 1% 0 1% 0;
+}*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+  }
+body{
+    background-image:url(../img/fondo_azul.png) ;
+}
+body::-webkit-scrollbar {
+  -webkit-appearance:none;
+  background-image:url(../img/fondo_azul.png) ;
+  width: 0;
+ 
+}
+/*body::-webkit-scrollbar-thumb {
+  background-image:url(../img/fondo_blanco.png) ;
+  border: 1px solid #f1f2f3;
+}*/
+.desaparece{
+  display: none;
+}
+
+/*HEADER*/
+header{
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+}
+/*Parte encabezado*/
+.encabezado{
+  display: flex;
+  justify-content: center;
+  background-image:url(../img/fondo_blanco.png),url(../img/marquito.png)  ;
+  height: 50%;
+  padding: 1%;
+}
+.logos{
+  width: 50%;
+}
+.logoP{
+  width: auto;
+  height: 100%;
+}
+/*Parte navegador*/
+.navegador{
+  display: flex;
+  flex-direction: column;
+  background-image:url(../img/fondo-azulito_plano.jpg);
+  font-family: 'Medula One', cursive;
+  position: relative;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+
+}
+nav li{
+  display: flex;
+  list-style: none;
+  padding: 1%;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+/*Animacion nav*/
+nav a{
+  position: relative;
+}
+nav a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: 1px;
+  background: linear-gradient(to right, gray, white, gray);
+  z-index:1;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+  
+}
+nav a:hover::before{
+  transform:scaleX(1);
+}
+/*Nav responsivo*/
+.hide {
+  display: block;
+  padding: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 200%;
+}
+.hide:hover{
+  transition: all ease-in-out 250ms;
+}
+.rupi_op{
+  height: 5vh;
+  margin-right: 5px;
+}
+
+/*MAIN*/
+main h1{
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  font-family: 'Medula One', cursive;
+ /* -webkit-text-stroke: 1px rgb(46, 34, 34); */
+}
+/*Inicio tableta sheika*/
+.contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Medula One', cursive;
+  width: 100%;
+  height: auto;
+}
+.tableta{
+  background-image:url(../img/marco.png),
+  url(../img/fondo_azul_negro.jpg) ;
+  width: 100%;
+  height: auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5%;
+  margin-top: 1%;
+  padding: 3%;
+  color: white;
+  }
+.tablet-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 10%;
+}
+.tablet-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.tablet-cont div:last-child{
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+}
+.tablet-cont div{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.tablet-cont h2{
+  font-size: 200%;
+  margin: 3%;
+}
+.tablet-cont button{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border:black solid 3px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background: none;
+}
+.tablet-cont div{
+  text-align: center;
+}
+/*Botones tableta*/
+.juego button{
+  border-color: pink;
+  box-shadow: 0 0 40px 40px rgba(236, 159, 172, 0.719) inset, 0 0 0 0 rgba(236, 159, 172, 0.719);
+}
+.person button{
+  border-color:rgb(0, 132, 255);
+  box-shadow: 0 0 40px 40px rgba(152, 191, 241, 0.527) inset, 0 0 0 0 rgba(152, 191, 241, 0.527);
+}
+.lugares button{
+  border-color:purple;
+  box-shadow: 0 0 40px 40px rgba(128, 0, 128, 0.685) inset, 0 0 0 0 rgba(128, 0, 128, 0.685);
+}
+.obj button{
+  border-color:green;
+  box-shadow: 0 0 40px 40px rgba(0, 128, 0, 0.63) inset, 0 0 0 0 rgba(0, 128, 0, 0.63);
+}
+.razas button{
+  border-color:yellow;
+  box-shadow: 0 0 40px 40px rgba(255, 255, 0, 0.671) inset, 0 0 0 0 rgba(255, 255, 0, 0.671);
+}
+/*Animacion botones*/
+.tablet-cont button:hover{
+  cursor: pointer;
+  background: none;
+}
+.juego button:hover {
+  box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px pink;
+}
+.person button:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 132, 255) inset, 0 0 10px 4px rgb(0, 132, 255);
+}
+.lugares button:hover {
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+.obj button:hover{
+  box-shadow: 0 0 10px 0 green inset, 0 0 10px 4px green;
+}
+.razas button:hover{
+  box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+}
+/*Divisiones entre secciones*/
+.letra{
+  display: none;
+  width: 45%;
+  height: auto;
+}
+#division{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background:rgba(57, 57, 219, 0.247);
+  margin: 1% 0 1% 0;
+}
+
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    background-image:url(../img/fondo-azulito_plano.jpg) ;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .poli{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .poli a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    padding: 0 1% 0 1%;
+    margin:1%;
+  }
+  .poli a:nth-of-type(2){
+    border-left:solid white 2px;
+    border-right:solid white 2px;
+  }
+  
+  
+  @media (min-width: 768px) {/*tablet*/
+    /*desaparece*/
+  .desaparece{
+    display: flex;
+  }
+  .hide{
+    display: none;
+  }
+  .rupi_op{
+    display: none;
+  }
+    /*HEADER*/
+  header{
+    height: 15vh;
+  }
+  /*Encabezado*/
+  .encabezado{
+    justify-content: space-between;
+  }
+  .navegador{
+      background: none;
+  }
+  nav{
+    flex-direction: row;
+  }
+  .rupi{
+    width: 4%;
+    height: auto;
+    margin: 1%;
+  }
+  .logos{
+    display: flex;
+    margin-bottom: 3px;
+  }
+  .logoG{
+    width: auto;
+    height: 100%;
+  }
+  /*Buscador*/
+  .buscador{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    padding-right: 1%;
+  }
+  input{
+    background-color: rgba(255, 255, 255, 0.144);
+    height: 4vh;
+    border-bottom:black solid 2px;
+  }
+  .buscador img{
+    margin: 2%;
+    height: 40%;
+  }
+  /*Navegador*/
+  .navegador{
+    justify-content: center;
+    align-items: center;
+  }
+  nav{
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 3%  0 3%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px white;
+    width: 65%;
+    background-image:url(../img/fondo-azulito_plano.jpg);
+  }
+    /*MAIN*/
+    /*Tableta Sheika*/
+  .tablet-cont{
+    display: flex;
+    flex-direction: row;
+  }
+  .tablet-cont div:last-child{
+    width: auto;
+  }
+
+
+
+  }
+  
+    
+  @media (min-width: 1200px) {/*Escritorio*/
+    /*HEADER*/
+  header{
+    height: 25vh;
+  }
+  /*Tableta sheika*/
+  .tableta{
+    width: 60%;
+    height: 60vh;
+  }
+  /*Divisionn*/
+  .letra{
+    display: flex;
+  }
+ 
+
+  }

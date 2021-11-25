@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLOZ</title>
+    <link rel="stylesheet" href="css/styleR.css">
+<!--Librerias-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!--Letras-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+<header>
+  <div class="encabezado">
+    <div class="logos">
+      <img class="logoG desaparece" src="img/triforce.gif">
+      <img class="logoP" src="img/logo-loz.png">
+    </div>
+    <div class="buscador desaparece">
+      <img src="img/loupe.png">
+      <div id="bar-search"><input type="text" id="search" placeholder="Buscar"></div>
+    </div>
+  </div>
+
+  <div class="navegador">
+    <nav>
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="index.html">Inicio</a></li>
+      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Cronología</a> </li>
+      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Arte Oficial</a> </li>
+      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Quienes somos</a> </li>
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+    </nav>
+    <div class="hide">
+      <i class="fa fa-bars" aria-hidden="true">Menu</i> 
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="contenido">
+    <div class="tableta">
+      <div class="tablet-cont">
+        <div class="juego">
+          <h2>Juegos</h2>
+         
+          <button > <img src="img/gamepad.png"></button>
+        </div>
+        <div class="person">
+          <h2>Personajes</h2>
+          <button> <img src="img/profile.png"></button>
+        </div>
+        <div class="lugares">
+          <h2>Lugares</h2>
+          <button> <img src="img/image.png"></button>
+        </div>
+        <div class="obj">
+          <h2>Objetos</h2>
+          <button> <img src="img/shelves.png"></button>
+        </div>
+        <div class="razas">
+          <h2>Razas</h2>
+          <button> <img src="img/stakeholder.png"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="division">
+    <img class="letra"src="img/divider-black.svg"/>
+    <h1>Razas</h1>
+    <img class="letra"src="img/divider-black.svg"/>
+  </div>
+
+  <div class="razas">
+      <section></section>
+  </div>
+
+</main>
+
+
+<footer>
+  <div class="poli">
+    <a href="">Política de privacidad</a><a href="">Términos de uso (Inglés) </a><a href="">Preferencias de Cookies</a>
+  </div>
+    <p>@2021.NintendoNoMeDemandes</p>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(".hide").on('click', function() {
+    $(".navegador nav").toggle('slow');
+    })
+  </script>
+  
+</body>
+
+</html>
