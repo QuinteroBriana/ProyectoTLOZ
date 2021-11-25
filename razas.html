@@ -10,8 +10,8 @@
 <!--Librerias-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<!--Letras-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <!--Letras-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
@@ -32,19 +32,18 @@
     </div>
   </div>
 
-  <div class="navegador">
-    <nav>
+  <nav>
+    <ul class="menu">
       <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
-      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="index.html">Inicio</a></li>
-      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Cronología</a> </li>
-      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Arte Oficial</a> </li>
-      <li> <img class="rupi_op animate__animated animate__pulse animate__infinite " src="img/rupi_blue.png"><a href="">Quienes somos</a> </li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="index.html">Inicio</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="cronologia.html">Cronología</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="#">Arte Oficial</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href=""></a><a href="#">Quienes somos</a></li>
+      <div class="buscador hide"><img src="img/loupe.png"><div id="bar-search "><input type="text" id="search" placeholder="Buscar"></div></div>
+      <li class="toggle hide"><a href="#"><i class="fas fa-bars"></i></a></li>
       <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
-    </nav>
-    <div class="hide">
-      <i class="fa fa-bars" aria-hidden="true">Menu</i> 
-    </div>
-  </div>
+    </ul>
+  </nav>
 </header>
 
 <main>
@@ -53,8 +52,7 @@
       <div class="tablet-cont">
         <div class="juego">
           <h2>Juegos</h2>
-         
-          <button > <img src="img/gamepad.png"></button>
+          <button onclick="window.location.href='juegos.html'"><img src="img/gamepad.png"></button>
         </div>
         <div class="person">
           <h2>Personajes</h2>
@@ -70,17 +68,18 @@
         </div>
         <div class="razas">
           <h2>Razas</h2>
-          <button> <img src="img/stakeholder.png"></button>
+          <button > <img src="img/stakeholder.png"></button>
         </div>
       </div>
     </div>
   </div>
 
   <div id="division">
-    <img class="letra"src="img/divider-black.svg"/>
-    <h1>Razas</h1>
-    <img class="letra"src="img/divider-black.svg"/>
+    <div class="separo"></div>
+    <h1 data-aos="zoom-out" data-aos-delay="200">Razas</h1>
+    <div class="separo"></div>
   </div>
+
 
   <div class="razas">
       <section></section>
@@ -88,26 +87,29 @@
 
 </main>
 
-
 <footer>
-  <div class="poli">
-    <a href="">Política de privacidad</a><a href="">Términos de uso (Inglés) </a><a href="">Preferencias de Cookies</a>
+  <div>
+  <div class="follow">
+    <h3>Sigue a Nintendo:</h3>
+    <ul>
+    <a class="redes" href="https://www.facebook.com/NintendoLatAm/?brand_redir=119240841493711"><img src="img/facebook.png"></a>
+    <a class="redes" href="https://twitter.com/NintendoAmerica"><img src="img/gorjeo.png"></a>
+    <a class="redes" href="https://www.youtube.com/nintendo"><img src="img/youtube.png"></a>
+    <a class="redes" href="https://www.instagram.com/nintendo/"><img src="img/instagram.png"></a>
+  </ul>
   </div>
-    <p>@2021.NintendoNoMeDemandes</p>
+    <img id="priv" src="img/privacidad.png">
+  </div>
+    <p>©2021 Nintendo. The Legend of Zelda son marcas registradas de Nintendo.</p>
 </footer>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>
-    $(".hide").on('click', function() {
-    $(".navegador nav").toggle('slow');
-    })
-  </script>
-  
+<!--Scripts-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script/app.js"></script>
+
+
 </body>
 
 </html>
