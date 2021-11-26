@@ -4,10 +4,12 @@
   border:0;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x:hidden 
+} 
 body{
   background-image:url(../img/fondo_azul.png) ;
   font-family: 'Medula One', cursive;
-  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   -webkit-appearance:none;

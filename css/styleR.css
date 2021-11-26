@@ -4,10 +4,12 @@
   border:0;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x:hidden 
+} 
 body{
   background-image:url(../img/fondo_azul.png) ;
   font-family: 'Medula One', cursive;
-  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   -webkit-appearance:none;
@@ -243,6 +245,46 @@ main h1{
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*Razas*/
+.contR{
+  display: flex;
+  flex-direction: column;
+  background-image:url(../img/Razas/InsideHyruleCastle.png) ;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+.soy{
+  display: flex;
+  background-image:url(../img/Razas/LIBROS.png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.soy a{
+  color: black;
+  margin: 10%;
+  font-size: 300%;
+  background-color: rgba(255, 255, 255, 0.658);
+  border-radius: 50px;
+  text-decoration: underline;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gallery li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery li img{
+  width:50% ;
+}
 /*FOOTER*/
 footer{
   display: flex;
@@ -274,8 +316,6 @@ footer p{
   font-size: 150%;
   color: rgba(255, 255, 255, 0.404);
 }
-  
-  
   @media (min-width: 768px) {/*tablet*/
  /*desaparece*/
 .desaparece{
@@ -382,6 +422,17 @@ footer h3{
   .letra{
     display: flex;
   }
+  /*razas*/
+.gallery{
+  display: flex;
+  flex-direction: row;
+}
+
+.soy{
+  display: flex;
+  background-size: 40% 50%;
+
+}
 /*Footer*/
 #priv{
   width: 20%;
