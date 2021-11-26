@@ -200,8 +200,7 @@
     box-shadow: 0 0 40px 40px rgba(128, 0, 128, 0.685) inset, 0 0 0 0 rgba(128, 0, 128, 0.685);
   }
   .obj button{
-    border-color:green;
-    box-shadow: 0 0 40px 40px rgba(0, 128, 0, 0.63) inset, 0 0 0 0 rgba(0, 128, 0, 0.63);
+    color: gray;
   }
   .razas button{
     border-color:yellow;
@@ -222,7 +221,7 @@
     box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
   }
   .obj button:hover{
-    box-shadow: 0 0 10px 0 green inset, 0 0 10px 4px green;
+    cursor: auto;
   }
   .razas button:hover{
     box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;

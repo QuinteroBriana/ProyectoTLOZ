@@ -196,8 +196,7 @@
     box-shadow: 0 0 40px 40px rgba(152, 191, 241, 0.527) inset, 0 0 0 0 rgba(152, 191, 241, 0.527);
   }
   .lugares button{
-    border-color:purple;
-    box-shadow: 0 0 40px 40px rgba(128, 0, 128, 0.685) inset, 0 0 0 0 rgba(128, 0, 128, 0.685);
+    color: gray;
   }
   .obj button{
     border-color:green;
@@ -219,7 +218,7 @@
     box-shadow: 0 0 10px 0 rgb(0, 132, 255) inset, 0 0 10px 4px rgb(0, 132, 255);
   }
   .lugares button:hover {
-    box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+    cursor: auto;
   }
   .obj button:hover{
     box-shadow: 0 0 10px 0 green inset, 0 0 10px 4px green;

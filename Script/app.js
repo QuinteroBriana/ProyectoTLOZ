@@ -1,7 +1,7 @@
-//el magico mundo del jquery
 
+//animaciones
 AOS.init();
-
+//el magico mundo del jquery
 $(function() {
   var tapped=false
 //Funcion que hace desplegable el nav

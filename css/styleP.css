@@ -192,8 +192,7 @@
     box-shadow: 0 0 40px 40px rgba(236, 159, 172, 0.719) inset, 0 0 0 0 rgba(236, 159, 172, 0.719);
   }
   .person button{
-    border-color:rgb(0, 132, 255);
-    box-shadow: 0 0 40px 40px rgba(152, 191, 241, 0.527) inset, 0 0 0 0 rgba(152, 191, 241, 0.527);
+    color: gray;
   }
   .lugares button{
     border-color:purple;
@@ -216,7 +215,7 @@
     box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px pink;
   }
   .person button:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 132, 255) inset, 0 0 10px 4px rgb(0, 132, 255);
+    cursor: auto;
   }
   .lugares button:hover {
     box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
@@ -244,6 +243,79 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  /*Personajes*/
+.cont_P{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url(../img/collagePersonajes/CollageCel.jpg);
+  background-size: 100% ;
+}
+.grupo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image:url(../img/marcoD.png) ;
+  background-size: 100% 100%;
+  padding: 5%;
+}
+.grupo p{
+  padding-left: 5%;
+}
+section{
+  background-color: rgba(0, 0, 0, 0.61);
+  width: 90%;
+  padding: 2%;
+  
+}
+
+section p{
+font-size: 300%;
+}
+.mostrar{
+  display: none;
+  flex-direction: column;
+  font-family: 'Libre Baskerville', serif;
+  width: 100%;
+}
+section i{
+  font-size: 300%;
+}
+section .mostrar a{
+  display: flex;
+  font-size: 170%;
+  color: white;
+  align-items: center;
+  text-decoration: underline;
+}
+.punto{
+  width: 20%;
+  height: auto;
+  margin-right: 5%;
+}
+section .mostrar p{
+  font-size: 200%;
+  color: rgba(255, 255, 255, 0.63);
+  text-align: center;
+}
+.mostrar i{
+  font-size: 300%;
+  color: black;
+  align-self: flex-end;
+}
+.fas{
+  -webkit-text-stroke: 0.5px gold;
+}
+.linea{
+  text-align: center;
+  border-bottom: white 1px solid;
+  background: -webkit-linear-gradient(left top, white, yellow);
+  background: linear-gradient(to bottom right, white, yellow);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+}
+
   /*FOOTER*/
   footer{
     display: flex;
@@ -359,6 +431,24 @@
     .tablet-cont div:last-child{
       width: auto;
     }
+    /*Personajes*/
+    section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .grupo{
+      width: 80%;
+    }
+    .grupo p{
+      font-size: 250%;
+    }
+
+    .mostrar{
+      width: 90%;
+    }
+
   /*Footer*/
   footer{
     margin-top:1%;
@@ -367,44 +457,50 @@
     font-size: 200%;
   }
     }
-    
-      
+
     @media (min-width: 1200px) {/*Escritorio*/
-      /*HEADER*/
-    header{
-      height: 25vh;
-    }
-    /*Tableta sheika*/
-    .tableta{
-      width: 60%;
-      height: 60vh;
-    }
-    /*Divisionn*/
-    .letra{
-      display: flex;
-    }
-  /*Footer*/
-  #priv{
-    width: 20%;
-    height: auto;
-  }
-  footer .follow{
-    display: flex;
-    flex-direction: column;
-  }
-  footer h3{
-    font-size: 200%;
-  }
-  footer p{
-    font-size: 130%;
-  }
-  .redes{
-    margin: 1px;
-  }
-  .redes:hover{
-    transition:all .5s ease-in-out;
-    filter: opacity(.4);
-  } 
-  
-    }
+/*HEADER*/
+header{
+  height: 25vh;
+}
+/*Tableta sheika*/
+.tableta{
+  width: 60%;
+  height: 60vh;
+}
+/*Personajes*/
+.cont_P{
+  background-image:url(../img/collagePersonajes/CollageE.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+section{
+  width: 70%;
+}
+.punto{
+  width: 10%;
+}
+/*Footer*/
+#priv{
+  width: 20%;
+  height: auto;
+}
+footer .follow{
+  display: flex;
+  flex-direction: column;
+}
+footer h3{
+  font-size: 200%;
+}
+footer p{
+  font-size: 130%;
+}
+.redes{
+  margin: 1px;
+}
+.redes:hover{
+  transition:all .5s ease-in-out;
+  filter: opacity(.4);
+} 
+}
   

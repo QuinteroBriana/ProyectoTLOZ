@@ -255,7 +255,6 @@ main h1{
   width: 100%;
   height: auto;
   background-image:url(../img/lonk_cel.jpg) ;
-  /*background-repeat: no-repeat;*/
   background-size: 100% ;
   background-attachment: fixed;
   border-radius: 5px;
