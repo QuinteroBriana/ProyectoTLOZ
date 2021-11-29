@@ -271,20 +271,43 @@ main h1{
   font-size: 300%;
   background-color: rgba(255, 255, 255, 0.658);
   border-radius: 50px;
-  text-decoration: underline;
 }
-.gallery{
-  display: grid;
-  grid-template-columns: auto auto;
-}
+
 .gallery li{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50vh;
+  
 }
-.gallery li img{
-  width:50% ;
+
+
+/*Animacion nav*/
+.apartado a{
+  position: relative;
 }
+.apartado a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  margin-top: 1px;
+  background: linear-gradient(to right, red, gold, red);
+  z-index:1;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+}
+.apartado a:hover::before{
+  transform:scaleX(1); 
+}
+
+.apartado a:hover{
+  color: rgb(212, 184, 20);
+}
+
+
 /*FOOTER*/
 footer{
   display: flex;
@@ -423,16 +446,13 @@ footer h3{
     display: flex;
   }
   /*razas*/
-.gallery{
-  display: flex;
-  flex-direction: row;
-}
 
-.soy{
-  display: flex;
-  background-size: 40% 50%;
+.gallery li{
+
+
 
 }
+
 /*Footer*/
 #priv{
   width: 20%;
