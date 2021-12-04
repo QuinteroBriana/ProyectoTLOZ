@@ -278,6 +278,23 @@ main h1{
     order: 1;
 
 }
+
+
+.animation-examples{
+  color: #174373;
+  outline: 10px dashed white;
+  box-shadow: 0 0 0 10px rgba(7, 7, 66, 0);
+  animation: 2s animateBorderTwo ease infinite;
+  margin: 3%;
+}
+
+@keyframes animateBorderTwo {
+  to {
+    outline-color: #174373;
+    box-shadow: 0 0 0 10px white;
+  }
+}
+
 /*Imagenes*/
 .titulos-videojuegos section:nth-child(odd) .der{
     display: none;
@@ -464,6 +481,11 @@ nav{
 .titulos-videojuegos a{
   font-size: 300%;
 }
+
+.animation-examples{
+  margin: 1%;
+}
+
 /*Footer*/
 footer{
   margin-top:1%;
@@ -493,7 +515,6 @@ display: flex;
 height: 10vh;
 align-items: center;
 justify-content: center;
-border-radius: 20px;
 }
 .titulos-videojuegos article:hover {
   transform: scale(1.1);
@@ -510,10 +531,19 @@ border-radius: 20px;
 }
 .titulos-videojuegos section:nth-child(odd) .der{
   display: flex;
+ 
 }
 .titulos-videojuegos section:nth-child(even) .izq{
   display: flex;
 }
+.titulos-videojuegos section:nth-child(even) .der{
+  margin-right: 1%;
+ 
+}
+.titulos-videojuegos section:nth-child(odd) .izq{
+  margin-left: 1%;
+}
+
 .titulos-videojuegos section{
   display: flex;
   flex-direction: row;
