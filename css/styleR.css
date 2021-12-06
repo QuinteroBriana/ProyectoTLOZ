@@ -56,6 +56,7 @@
 
 .apartado a:hover{
   color: rgb(212, 184, 20);
+  cursor: pointer;
 }
 
   
