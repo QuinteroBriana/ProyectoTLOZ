@@ -27,6 +27,15 @@ $("article").dblclick(function(){
  $(".informacion").css("display", "none");
 });
 
+//funcion de abrir y cerrar formularios
+$(".open-button").click(function(){
+  $(".form-popup").css("display", "block");
+});
+
+$(".cerrar").click(function(){
+  $(".form-popup").css("display", "none");
+});
+
 //funcion para dar toques en celular/tableta y se quite o aparezca la informacion
 $("article").on("touchstart", function(e) {
  if(!tapped){ //if tap is not set, set up single tap

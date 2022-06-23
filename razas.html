@@ -20,17 +20,38 @@
 </head>
 
 <body>
-<header>
-  <div class="encabezado">
-    <div class="logos">
-      <img class="logoG desaparece" src="img/triforce.gif">
-      <img class="logoP" src="img/logo-loz.png">
+  <header>
+    <div class="encabezado">
+      <div class="logos">
+        <img class="logoG desaparece" src="img/triforce.gif">
+        <img class="logoP" src="img/logo-loz.png">
+      </div>
+      <div class="buscador desaparece">
+        <img src="img/loupe.png">
+        <div id="bar-search"><input type="text" id="search" placeholder="Buscar"></div>
+      </div>
+      <div class="cuenta desaparece">
+        <button class="btnEnca">Crear Cuenta</button>
+        <button class="open-button btnEnca">Iniciar Sesion</button>
+  
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <div>
+            <h1>Iniciar Sesion</h1>
+            <button class="cerrar"><b>X</b></button>
+          </div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="login"><b>Login</b></button>
+          </form>
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="buscador desaparece">
-      <img src="img/loupe.png">
-      <div id="bar-search"><input type="text" id="search" placeholder="Buscar"></div>
-    </div>
-  </div>
 
   <nav>
     <ul class="menu">
@@ -38,6 +59,7 @@
       <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="index.html">Inicio</a></li>
       <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="cronologia.html">Cronología</a></li>
       <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="arte.html">Arte Oficial</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="tienda.html">Tienda</a></li>
       <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="somos.html">Quienes somos</a></li>
       <div class="buscador hide"><img src="img/loupe.png"><div id="bar-search "><input type="text" id="search" placeholder="Buscar"></div></div>
       <li class="toggle hide"><a href="#"><i class="fas fa-bars"></i></a></li>

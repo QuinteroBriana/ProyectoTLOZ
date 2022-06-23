@@ -16,9 +16,11 @@ body::-webkit-scrollbar {
   background-image:url(../img/fondo_azul.png);
   width: 0;
 }
+
 .desaparece{
   display: none;
 }
+
 /*HEADER*/
 header{
   display: flex;
@@ -49,6 +51,7 @@ input{
   height: 4vh;
   border-bottom:black solid 2px;
 }
+
 /*Parte navegador*/
 nav {
   background-image:url(../img/fondo-azulito_plano.jpg);
@@ -295,7 +298,7 @@ footer p{
 .desaparece{
   display: flex;
 }
-.hide,.rupi_op {
+.hide{
   display: none;
 }
 .menu .buscador{
@@ -329,6 +332,130 @@ header{
   margin: 2%;
   height: 40%;
 }
+/*sesiones*/
+.cuenta{
+
+  align-items: center;
+}
+
+.cuenta .btnEnca{
+  border-radius: 20%;
+  background-image:url(../img/fondo_blanco.png) ;
+  border:black solid 2px;
+  font-family: 'Medula One', cursive;
+  font-size: 150%;
+  margin: 2%;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.cuenta .btnEnca:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-image:url(../img/fondo-azulito_plano.jpg) ;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.cuenta .btnEnca:hover {
+  color: #fff;
+}
+.cuenta .btnEnca:hover:after {
+  width: 110%;
+}
+
+/*formularioIniciar*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-image:url(../img/fondo_blanco.png) ;
+}
+.form-popup div{
+  display: flex;
+  justify-content:space-between;
+}
+
+.form-popup div .cerrar{
+border-radius: 50%;
+border: red solid 2px;
+color: red;
+  cursor: pointer;
+  padding: 3%;
+  font-size: 100%;
+  text-align: center;
+  background: none;
+ }
+
+
+ .form-popup div .cerrar:hover{
+  color: white;
+  background-color: red;
+ }
+ 
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container label{
+  font-size: 150%;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.login{
+  border-radius: 10%;
+  padding: 5% 5%;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  color: black;
+  font-family: 'Medula One', cursive;
+  font-size: 150%;
+  border: black solid 3px;
+  background: none;
+}
+
+.login {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.login:hover {
+  box-shadow: 0 0 40px 40px gold inset;
+
+}
+
+
 /*Navegador*/
 .rupi:first-of-type{
   order:0;

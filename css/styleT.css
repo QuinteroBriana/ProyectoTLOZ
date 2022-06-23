@@ -1,0 +1,175 @@
+/*Tienda*/
+.shop{
+    padding: 1%;
+    margin: 1%;
+}
+
+
+h2, h3{
+    font-family: 'Medula One', cursive;
+    margin: 1%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+.producto{
+    display: flex;
+    background-image:url(../img/fondo_blanco.png) ;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.shop .imgPro{
+    height: 40vh;
+    width: 70%;
+    position: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    margin: 1%;
+ 
+}
+
+.fObject{
+    background-image:url(../img/tienda/TLOZSS.jpg) ;
+}
+
+.sObject{
+    background-image:url(../img/tienda/amiibo.jpg) ;
+}
+
+.tObject{
+    background-image:url(../img/tienda/unoTLOZ.jpg) ;
+}
+
+.cObject{
+    background-image:url(../img/tienda/Coleccionista.jpg) ;
+}
+
+.qObject{
+    background-image:url(../img/tienda/cartera.jpg);
+}
+
+.sObject{
+    background-image:url(../img/tienda/rompecabeza.jpg);
+}
+
+.sepObject{
+    background-image:url(../img/tienda/majoras.jpg);
+}
+.oObject{
+    background-image:url(../img/tienda/Hoodie.jpg);
+}
+.opComprar{
+display: flex;
+justify-content: space-around;
+margin: 2%;
+}
+
+.precio{
+    display: flex;
+    justify-content: center;
+}
+
+.opComprar button{
+    cursor: pointer;
+    font-family: 'Medula One', cursive;
+    font-size: 150%;
+    background-image:url(../img/fondo_azul_negro.jpg) ;
+  color: white;
+  border-radius: 10%;
+  padding: 1%;
+  margin: 1%;
+  
+}
+.opComprar button:hover{
+ color: yellow;
+
+}
+
+@media (min-width: 768px) {/*tablet*/
+    .producto {
+        display: flex;
+       justify-content: space-around;
+       width: 100%;
+       align-items: center;
+       flex-direction: row;
+     
+
+    }
+    h2{
+        font-size: 300%;
+    }
+    
+
+
+    h3{
+        font-size: 250%;
+    }
+    
+
+    .infoPro{
+        width: 100%;
+    }
+
+    .opComprar button{
+       
+      margin: 3%;
+      font-size: 200%;
+      padding: 4%;
+      
+    }
+
+    .shop .imgPro{
+        height: 40vh;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    
+}
+@media (min-width: 1200px) {/*Escritorio*/
+.shop{
+    display: flex;
+    justify-content: center;
+}
+    .producto{
+        width: 65%;
+    }
+
+    .infoPro{
+        display: flex;
+    }
+
+    .costo{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-image:url(../img/marquito.png) ;
+        position: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    h2{
+        font-size: 250%;
+    }
+
+    h3{
+        font-size: 200%;
+    }
+
+    .precio{
+        display: flex;
+        align-items: center;
+    }
+    .opComprar{
+      flex-direction: column;
+    }
+
+    .shop .imgPro{
+        width: 40%;
+    }
+}

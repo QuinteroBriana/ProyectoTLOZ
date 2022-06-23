@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLOZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleT.css">
+<!--Librerias-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <!--Letras-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+  <header>
+    <div class="encabezado">
+      <div class="logos">
+        <img class="logoG desaparece" src="img/triforce.gif">
+        <img class="logoP" src="img/logo-loz.png">
+      </div>
+      <div class="buscador desaparece">
+        <img src="img/loupe.png">
+        <div id="bar-search"><input type="text" id="search" placeholder="Buscar"></div>
+      </div>
+      <div class="cuenta desaparece">
+        <button class="btnEnca">Crear Cuenta</button>
+        <button class="open-button btnEnca">Iniciar Sesion</button>
+  
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <div>
+            <h1>Iniciar Sesion</h1>
+            <button class="cerrar"><b>X</b></button>
+          </div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="login"><b>Login</b></button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <nav>
+    <ul class="menu">
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="index.html">Inicio</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="cronologia.html">Cronología</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="arte.html">Arte Oficial</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="#" id="desa">Tienda</a></li>
+      <li class="item"><img class="rupi_op animate__animated animate__pulse animate__infinite hide" src="img/rupi_blue.png"><a href="somos.html">Quienes somos</a></li>
+      <div class="buscador hide"><img src="img/loupe.png"><div id="bar-search "><input type="text" id="search" placeholder="Buscar"></div></div>
+      <li class="toggle hide"><a href="#"><i class="fas fa-bars"></i></a></li>
+      <img class="rupi animate__animated animate__pulse animate__infinite desaparece" src="img/rupi_blue.png">
+    </ul>
+  </nav>
+</header>
+<main>
+  <div id="division">
+    <div class="separo"></div>
+    <h1 class="h1" data-aos="zoom-out">Tienda</h1>
+    <div class="separo"></div>
+  </div>
+
+  <div class="shop">
+    <div class="producto">
+      <div class="imgPro fObject"></div>
+      <div class="infoPro">
+        <div class="costo">
+          <h2>The Legend of Zelda: Skyward Sword HD - Standard Edition - Nintendo Switch</h2>
+          <div class="precio"> 
+            <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+            <h3>Precio: $1,399.00 </h3>
+            <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+          </div>
+        </div>
+        <div class="opComprar">
+          <button>Agregar al carrito</button>
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shop">
+    <div class="producto">
+      <div class="imgPro sObject"></div>
+      <div class="infoPro">
+        <div class="costo">
+          <h2>Nintendo amiibo Links Awakening Tloz Links Awakening Series - Standard Edition</h2>
+          <div class="precio"> 
+            <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+            <h3>Precio: $1,579</h3>
+            <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+          </div>
+        </div>
+        <div class="opComprar">
+          <button>Agregar al carrito</button>
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro tObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>Juego de Cartas Uno de Zelda, Edición Exclusiva con Regla Especial</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $369.48</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro cObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>CultureFly Legend of Zelda - Caja de coleccionista | Contiene 6 artículos exclusivos incluyendo manta de mapa, pin de eslabones, vinilo dorado Hylian Shield y más</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $1,423.64</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro qObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>Zelda Hylian Shield - Cartera para videojuegos (poliuretano y lona)</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $548.06</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro sObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>The Legend of Zelda Breath of The Wild - Rompecabezas de 1000 Piezas con Enlace de The Legend of Zelda Videojuego con Licencia Oficial de Nintendo Merchandise</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $363.67</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro sepObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>The Legend of Zelda: Majora's Mask 3D (World Edition)</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $622.80</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="producto">
+          <div class="imgPro oObject"></div>
+          <div class="infoPro">
+            <div class="costo">
+              <h2>CosplayLife Legend of Zelda Breath of The Wild Twilight Princess Kangaroo Pocket Cosplay Hoodies</h2>
+              <div class="precio"> 
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+                <h3>Precio: $612.68</h3>
+                <img class="rupi_op animate__animated animate__pulse animate__infinite" src="img/rupi_blue.png">
+              </div>
+            </div>
+            <div class="opComprar">
+              <button>Agregar al carrito</button>
+              <button>Comprar ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+
+<footer>
+  <div>
+  <div class="follow">
+    <h3>Sigue a Nintendo:</h3>
+    <ul>
+    <a class="redes" href="https://www.facebook.com/NintendoLatAm/?brand_redir=119240841493711"><img src="img/facebook.png"></a>
+    <a class="redes" href="https://twitter.com/NintendoAmerica"><img src="img/gorjeo.png"></a>
+    <a class="redes" href="https://www.youtube.com/nintendo"><img src="img/youtube.png"></a>
+    <a class="redes" href="https://www.instagram.com/nintendo/"><img src="img/instagram.png"></a>
+  </ul>
+  </div>
+    <img id="priv" src="img/privacidad.png">
+  </div>
+    <p>©2021 Nintendo. The Legend of Zelda son marcas registradas de Nintendo.</p>
+</footer>
+
+<!--Scripts-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script/app.js"></script>
+
+</body>
+
+</html>
